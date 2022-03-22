@@ -13,7 +13,7 @@ cv2.createTrackbar('Y_POS','MBS3523',640,480,nil)
 
 while True:
     success, img = cam.read()
-    cv2.putText(img,'MBS3523 Assignment 1d-Q5 Name:Lau Chi Wing',(20,40),cv2.FONT_HERSHEY_SIMPLEX,0.75,(225,135,10),3)
+    cv2.putText(img,'MBS3523 Assignment 1d-Q5 Name:Lau Chi Wing',(20,40),cv2.FONT_HERSHEY_SIMPLEX,0.75,(50,50,200),2)
     x = cv2.getTrackbarPos('X_POS', 'MBS3523')
     y = cv2.getTrackbarPos('Y_POS', 'MBS3523')
     cv2.line(img,(x,0),(x,755),(255,0,0),2)
